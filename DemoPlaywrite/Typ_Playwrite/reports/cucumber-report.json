@@ -1,0 +1,193 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-with-invalid-credential",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with Invalid credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7556478799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter my credentials",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216581799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 939645200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The warning message",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:32"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 21857499,
+              "error_message": "page.$: Unexpected token \"!\" while parsing selector \"Userid or Password did Not Match !!\"\n    at LoginPage.<anonymous> (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\pages\\login.js:49:42)\n    at C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\pages\\login.js:8:71\n    at __awaiter (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\pages\\login.js:4:12)\n    at LoginPage.verifyWarning (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\pages\\login.js:48:16)\n    at C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\step-definitions\\login.steps.js:33:21\n    at C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\step-definitions\\login.steps.js:8:71\n    at __awaiter (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\step-definitions\\login.steps.js:4:12)\n    at World.<anonymous> (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\dist\\step-definitions\\login.steps.js:32:51)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;check-forgot-password",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Check Forgot Password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the login page",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4439540400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click Forgot password",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1070601299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I validate forgot password Page open",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5054800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;check-sign-up-page",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check Sign Up Page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am on the login page",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4252395299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click Sign Up",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5009718600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Lenovo\\Desktop\\Typ_Playwrite\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I validate Sign Up Page open",
+            "match": {
+              "location": "dist\\step-definitions\\login.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

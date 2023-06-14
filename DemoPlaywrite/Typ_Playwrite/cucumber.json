@@ -1,0 +1,11 @@
+{
+    "default": {
+      "require": [
+        "dist/step-definitions/*.js"
+      ],
+      "format": [
+        "json:reports/cucumber-report.json"
+      ]
+    }
+  }
+  

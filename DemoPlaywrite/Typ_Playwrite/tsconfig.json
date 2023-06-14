@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+  },
+  "include": ["./features/**/*.ts",
+  "./step-definitions/**/*.ts",
+  "./pages/**/*.ts",
+  "playwright.d.ts"
+],
+"exclude": ["node_modules"]
+}
